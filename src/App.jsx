@@ -1,8 +1,17 @@
 import React from 'react'
+import Header from './Components/Header'
+import Main from './Components/Main'
+import Footer from './Components/Footer'
 
 function App() {
   return (
-    <div>Movie Finder App</div>
+    <div className="Main-Container max-w-7xl mx-auto">
+       
+      <Header />
+      <Main />
+      {/* <Footer /> */}
+
+    </div>
   )
 }
 

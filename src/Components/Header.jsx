@@ -23,7 +23,7 @@ function Header() {
                 <button type="submit" className="rounded-md bg-red-500 px-3 py-2 font-bold hover:bg-red-700">Search</button>
             </div> */}
 
-            <SearchContainer styles="search md:flex gap-4 hidden "/>
+            <SearchContainer styles="search md:flex gap-4 hidden" />
         </nav>
     </header>
 

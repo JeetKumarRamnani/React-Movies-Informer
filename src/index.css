@@ -7,3 +7,47 @@ body{
   background-color: black;
   color:white;
 }
+
+
+footer {
+  background-color: #161619;
+  padding         : 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer i {
+  width: 50px;
+
+  font-size: 1.3rem;
+  cursor   : pointer;
+
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-square-facebook {
+  color: #4267B2;
+}
+
+.fa-square-twitter {
+  color: #1DA1F2;
+}
+
+.fa-instagram {
+  color: #405DE6
+}
+
+
+.yt:active {
+  transform: translateY(2px);
+}
+
+
+.insta:active {
+  transform: translateY(2px);
+}

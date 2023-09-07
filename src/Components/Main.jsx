@@ -29,9 +29,9 @@ function Main() {
     <main className="flex gap-10 w-full flex-wrap justify-center  py-10 ">
           <SearchContainer styles="search md:hidden gap-4 flex" moviesData={moviesData} setMoviesData={setMoviesData} />
 
-        {moviesData.map(movie=>{
-            return <MovieCard key={movie.poster_path} moviesData={movie} />
-        })}
+          {moviesData.map((movie) =>
+      movie.poster_path != null ? <MovieCard key={movie.poster_path} moviesData={movie} /> : null
+    )}
 
     </main>
   );

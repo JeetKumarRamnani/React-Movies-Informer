@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
+import SearchContainer from './SearchContainer';
 
 function Main() {
   const [moviesData, setMoviesData] = useState([]);
@@ -25,14 +26,11 @@ function Main() {
 
   return (
 
-    <main className="flex gap-10 w-full flex-wrap justify-center lg:justify-start py-10 ">
-           <div className="search md:hidden gap-4 flex  ">
-                <input type="text" className="rounded p-2 text-black" placeholder="Search Your Movie...." />
-                <button type="submit" className="rounded-md bg-red-500 px-3 py-2 font-bold hover:bg-red-700">Search</button>
-            </div>
+    <main className="flex gap-10 w-full flex-wrap justify-center  py-10 ">
+          <SearchContainer styles="search md:hidden gap-4 flex" moviesData={moviesData} setMoviesData={setMoviesData} />
 
         {moviesData.map(movie=>{
-            return <MovieCard moviesData={movie} />
+            return <MovieCard key={movie.poster_path} moviesData={movie} />
         })}
 
     </main>

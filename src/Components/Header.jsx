@@ -1,4 +1,5 @@
 import React from 'react'
+import SearchContainer from './SearchContainer'
 
 function Header() {
     const logoUrl = 'https://fontmeme.com/permalink/230906/26653325ef8a859c02351a024f6332b9.png'
@@ -17,10 +18,12 @@ function Header() {
                 <li><a href="">About US</a></li>
                 <li><a href="">Request A Movie</a></li>
             </ul> */}
-            <div className="search md:flex gap-4 hidden  ">
+            {/* <div className="search md:flex gap-4 hidden  ">
                 <input type="text" className="rounded md:p-2" placeholder="Search Your Movie...." />
                 <button type="submit" className="rounded-md bg-red-500 px-3 py-2 font-bold hover:bg-red-700">Search</button>
-            </div>
+            </div> */}
+
+            <SearchContainer styles="search md:flex gap-4 hidden "/>
         </nav>
     </header>
 
